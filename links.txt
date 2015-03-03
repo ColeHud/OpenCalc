@@ -1,0 +1,8 @@
+http://tjjr.fi/sw/python-uinput/ 
+
+https://docs.python.org/2/library/select.html
+
+http://stackoverflow.com/questions/24352768/python-key-press-and-key-release-listener
+
+
+
