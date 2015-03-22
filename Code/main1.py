@@ -1,3 +1,15 @@
+'''
+By Cole Hudson
+Date: 3/18/2015
+
+This program is used to handle key input from the raspberry pi's GPIO. When a pin is connected
+to ground, it emits a keystroke.
+
+The keys that can be emitted are set up with the device, and the key mapping is set up
+with the dictionary mapping.
+'''
+
+
 #import uinput for emitting keystrokes
 import uinput
 #import time in order to save cpu
@@ -28,12 +40,30 @@ device = uinput.Device([
 
 #GPIO Mapping
 mapping = {
-	1: uinput.KEY_1,
-	2: uinput.KEY_2,
-	3: uinput.KEY_3,
-	4: uinput.KEY_4,
-	5: uinput.KEY_5,
-	6: uinput.KEY_7,
+	7: uinput.KEY_LEFTSHIFT,
+	8: uinput.KEY_0,
+	10: uinput.KEY_ENTER,
+	#11 uinput.KEY_,
+	12: uinput.KEY_LEFTBRACE,
+	13: uinput.KEY_1,
+	15: uinput.KEY_2,
+	16: uinput.KEY_3,
+	#18: uinput.KEY_1,
+	19: uinput.KEY_RIGHTBRACE,
+	21: uinput.KEY_4,
+	22: uinput.KEY_5,
+	23: uinput.KEY_6,
+	#24: uinput.KEY_1,
+	#26: uinput.KEY_1,
+	29: uinput.KEY_7,
+	31: uinput.KEY_8,
+	32: uinput.KEY_9,
+	33: uinput.KEY_BACKSLASH,
+	#35: uinput.KEY_1,
+	#36: uinput.KEY_1,
+	#37: uinput.KEY_1,
+	#38: uinput.KEY_1,
+	#40: uinput.KEY_1,
 }
 
 
